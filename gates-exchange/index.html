@@ -1,0 +1,1006 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GateXchange — Global Payment Exchange</title>
+
+    <meta name="description"
+        content="GateXchange makes global payment exchange simple, fast and accessible for freelancers, remote workers and businesses worldwide.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </span>
+
+                <span class="logo-text">
+                    Gate<span>Xchange</span>
+                </span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+
+            <a href="#services" class="nav-button">
+                Start Exchange
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
+    <div class="mobile-menu">
+
+        <button class="mobile-menu-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+
+        <a href="#services" class="mobile-menu-cta">
+            Start Exchange
+        </a>
+
+    </div>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero">
+
+            <div class="hero-grid"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        Global Payment Exchange
+                    </div>
+
+                    <h1>
+                        Your money.
+                        <span>Your way.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        GateXchange makes receiving international payments
+                        simple for freelancers, remote workers and businesses
+                        around the world.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#services" class="primary-button">
+                            Start Exchange
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#how-it-works" class="secondary-button">
+                            How it works
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="trust-avatars">
+                            <div>JD</div>
+                            <div>MK</div>
+                            <div>AO</div>
+                            <div>+</div>
+                        </div>
+
+                        <div class="trust-text">
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <span>
+                                Trusted by remote workers worldwide
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO EXCHANGE CARD -->
+                <div class="hero-card-wrapper">
+
+                    <div class="floating-card floating-card-one">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>
+                            <strong>Global</strong>
+                            <span>Payments</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <strong>Simple</strong>
+                            <span>Process</span>
+                        </div>
+                    </div>
+
+                    <div class="exchange-card">
+
+                        <div class="exchange-card-header">
+                            <div>
+                                <span>GateXchange</span>
+                                <h3>Start an Exchange</h3>
+                            </div>
+
+                            <div class="exchange-icon">
+                                <i class="fa-solid fa-right-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="mini-label">
+                            SELECT A SERVICE
+                        </div>
+
+                        <div class="mini-service-grid">
+
+                            <button onclick="openTransaction('PayPal')">
+                                <i class="fa-brands fa-paypal"></i>
+                                PayPal
+                            </button>
+
+                            <button onclick="openTransaction('Stripe')">
+                                <i class="fa-brands fa-stripe"></i>
+                                Stripe
+                            </button>
+
+                            <button onclick="openTransaction('Wise')">
+                                <i class="fa-solid fa-globe"></i>
+                                Wise
+                            </button>
+
+                            <button onclick="openTransaction('Bank')">
+                                <i class="fa-solid fa-building-columns"></i>
+                                Bank
+                            </button>
+
+                        </div>
+
+                        <div class="exchange-card-footer">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Secure transaction request
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+        <section class="stats-section">
+
+            <div class="container stats-container">
+
+                <div class="stat">
+                    <strong>10+</strong>
+                    <span>Payment Services</span>
+                </div>
+
+                <div class="stat">
+                    <strong>50+</strong>
+                    <span>Countries Supported</span>
+                </div>
+
+                <div class="stat">
+                    <strong>24/7</strong>
+                    <span>Request Availability</span>
+                </div>
+
+                <div class="stat">
+                    <strong>4.9/5</strong>
+                    <span>Customer Rating</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+        <section class="services-section section-padding" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-eyebrow">
+                        OUR SERVICES
+                    </div>
+
+                    <h2>
+                        Choose how you
+                        <span>want to receive.</span>
+                    </h2>
+
+                    <p>
+                        Select your preferred payment service and tell us
+                        how much you want to receive. We'll take it from there.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <button class="service-card" onclick="openTransaction('PayPal')">
+                        <div class="service-icon paypal">
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>PayPal</h3>
+                            <p>Receive through PayPal</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Stripe')">
+                        <div class="service-icon stripe">
+                            <i class="fa-brands fa-stripe"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Stripe</h3>
+                            <p>Receive through Stripe</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Wise')">
+                        <div class="service-icon wise">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Wise</h3>
+                            <p>International payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('US Bank')">
+                        <div class="service-icon bank">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>US Bank</h3>
+                            <p>US bank payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Euro Bank')">
+                        <div class="service-icon euro">
+                            <i class="fa-solid fa-euro-sign"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Euro Bank</h3>
+                            <p>EUR payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Payoneer')">
+                        <div class="service-icon payoneer">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Payoneer</h3>
+                            <p>Freelancer payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Skrill')">
+                        <div class="service-icon skrill">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Skrill</h3>
+                            <p>Digital payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Revolut')">
+                        <div class="service-icon revolut">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Revolut</h3>
+                            <p>Global payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Venmo')">
+                        <div class="service-icon venmo">
+                            <i class="fa-solid fa-v"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Venmo</h3>
+                            <p>US payments</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+
+                    <button class="service-card" onclick="openTransaction('Zelle')">
+                        <div class="service-icon zelle">
+                            <i class="fa-solid fa-z"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Zelle</h3>
+                            <p>US transfers</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+        <section class="how-section section-padding" id="how-it-works">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <div class="section-eyebrow">
+                        SIMPLE PROCESS
+                    </div>
+
+                    <h2>
+                        Exchange in
+                        <span>three steps.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                        </div>
+
+                        <h3>Choose a service</h3>
+
+                        <p>
+                            Select the payment platform you want to use
+                            from our available services.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <h3>Enter your amount</h3>
+
+                        <p>
+                            Tell us how much you want to receive through
+                            your selected payment service.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <h3>Continue on WhatsApp</h3>
+
+                        <p>
+                            Submit your request and continue the conversation
+                            with our team on WhatsApp.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REVIEWS
+        ========================== -->
+        <section class="reviews-section section-padding" id="reviews">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-eyebrow">
+                        CUSTOMER REVIEWS
+                    </div>
+
+                    <h2>
+                        Trusted by people
+                        <span>around the world.</span>
+                    </h2>
+
+                    <p>
+                        See what customers are saying about their
+                        GateXchange experience.
+                    </p>
+
+                </div>
+
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+
+                        <div class="review-top">
+                            <div class="review-avatar">
+                                JF
+                            </div>
+
+                            <div>
+                                <h4>James Foster.</h4>
+                                <span>Freelance Developer</span>
+                            </div>
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+                        </div>
+
+                        <p>
+                            "The process was incredibly straightforward.
+                            I submitted my amount and continued everything
+                            through WhatsApp. Very convenient."
+                        </p>
+
+                    </article>
+
+
+                    <article class="review-card featured-review">
+
+                        <div class="review-top">
+
+                            <div class="review-avatar">
+                                SA
+                            </div>
+
+                            <div>
+                                <h4>Sarah A.</h4>
+                                <span>Remote Worker</span>
+                            </div>
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+
+                        </div>
+
+                        <p>
+                            "GateXchange made receiving my international
+                            payment much easier than I expected. The team
+                            was responsive and helpful."
+                        </p>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="review-top">
+
+                            <div class="review-avatar">
+                                DK
+                            </div>
+
+                            <div>
+                                <h4>Daniel K.</h4>
+                                <span>Digital Contractor</span>
+                            </div>
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+
+                        </div>
+
+                        <p>
+                            "Simple website, no unnecessary forms and a
+                            quick way to get in touch with the team.
+                            That's exactly what I needed."
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div class="cta-content">
+
+                        <div class="section-eyebrow">
+                            READY TO START?
+                        </div>
+
+                        <h2>
+                            Your next payment
+                            <span>starts here.</span>
+                        </h2>
+
+                        <p>
+                            Choose a payment service and tell us how much
+                            you want to receive.
+                        </p>
+
+                        <a href="#services" class="primary-button">
+                            Start an Exchange
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="cta-decoration">
+
+                        <div class="currency currency-one">$</div>
+                        <div class="currency currency-two">€</div>
+                        <div class="currency currency-three">£</div>
+                        <div class="currency currency-four">₿</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+        <section class="faq-section section-padding" id="faq">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <div class="section-eyebrow">
+                        FAQ
+                    </div>
+
+                    <h2>
+                        Frequently asked
+                        <span>questions.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="faq-container">
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>How does GateXchange work?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Choose your preferred payment service,
+                                enter the amount you want to receive and
+                                submit your request. You'll then continue
+                                the conversation with our team through
+                                WhatsApp.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>What payment services are available?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                GateXchange supports a range of international
+                                payment services. Available options are
+                                displayed on the services section of the
+                                website.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>How do I start a transaction?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Simply select a service, enter the amount
+                                you want to receive and click the WhatsApp
+                                button to contact our team.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>How will I know the exchange rate?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Applicable rates and transaction details
+                                will be confirmed with you before processing.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+
+                        <span class="logo-mark">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </span>
+
+                        <span class="logo-text">
+                            Gate<span>Xchange</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Simple global payment exchange for freelancers,
+                        remote workers and businesses.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div class="footer-column">
+
+                        <h4>Platform</h4>
+
+                        <a href="#services">Services</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#faq">FAQ</a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h4>Services</h4>
+
+                        <a href="#services">PayPal</a>
+                        <a href="#services">Stripe</a>
+                        <a href="#services">Wise</a>
+                        <a href="#services">Bank</a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h4>Support</h4>
+
+                        <a href="#faq">Help Center</a>
+                        <a href="#services">Start Exchange</a>
+
+                        <a
+                            href="https://wa.me/15485073822"
+                            target="_blank"
+                            rel="noopener">
+                            WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 GateXchange. All rights reserved.
+                </span>
+
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         TRANSACTION MODAL
+    ========================== -->
+    <div class="transaction-overlay" id="transactionModal">
+
+        <div class="transaction-modal">
+
+            <button
+                class="modal-close"
+                onclick="closeTransaction()"
+                aria-label="Close transaction">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="modal-service-icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+
+
+            <div class="modal-heading">
+
+                <span id="selectedService">
+                    PayPal
+                </span>
+
+                <h2>
+                    How much do you
+                    <span>want to receive?</span>
+                </h2>
+
+                <p>
+                    Enter your desired amount below and continue
+                    the conversation with our team.
+                </p>
+
+            </div>
+
+
+            <div class="amount-field">
+
+                <label for="amount">
+                    AMOUNT
+                </label>
+
+                <div class="amount-input">
+
+                    <span>$</span>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="0.00"
+                        min="1"
+                        step="0.01">
+
+                    <span class="currency-label">
+                        USD
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-notice">
+
+                <div class="notice-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Transaction Notice
+                    </strong>
+
+                    <p>
+                        All transactions are subject to review.
+                        Only legitimate funds are accepted.
+                        Exchange rates and applicable fees will be
+                        confirmed before processing.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <label class="terms-checkbox">
+
+                <input type="checkbox" id="termsCheck">
+
+                <span class="custom-checkbox"></span>
+
+                <span>
+                    I understand and agree to the transaction terms.
+                </span>
+
+            </label>
+
+
+            <button
+                class="whatsapp-button"
+                onclick="submitTransaction()">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Continue on WhatsApp
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </button>
+
+
+            <div class="modal-security">
+
+                <i class="fa-solid fa-lock"></i>
+
+                Your request is handled securely.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
