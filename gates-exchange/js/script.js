@@ -894,5 +894,150 @@ Please provide me with the next steps.`;
         "font-size:12px;color:#59615c;"
     );
 
+    /* =====================================================
+    TERMS NOTICE
+    ===================================================== */
+
+    const termsNotice =
+        document.getElementById("termsNotice");
+
+    const termsNoticeClose =
+        document.getElementById("termsNoticeClose");
+
+    const continueButton =
+        document.getElementById("continueButton");
+
+    const readTermsButton =
+        document.getElementById("readTermsButton");
+
+
+    /* -----------------------------------------------------
+    Show Terms Notice
+    ------------------------------------------------------ */
+
+    const termsAccepted =
+        localStorage.getItem("gateXchangeTermsViewed");
+
+
+    if (!termsAccepted && termsNotice) {
+
+        setTimeout(() => {
+
+            termsNotice.classList.add("active");
+
+            document.body.classList.add("modal-open");
+
+            if (typeof gsap !== "undefined") {
+
+                gsap.fromTo(
+                    ".terms-notice-modal",
+                    {
+                        y: 35,
+                        scale: 0.95,
+                        opacity: 0
+                    },
+                    {
+                        y: 0,
+                        scale: 1,
+                        opacity: 1,
+                        duration: 0.5,
+                        ease: "power3.out"
+                    }
+                );
+
+            }
+
+        }, 700);
+
+    }
+
+
+    /* -----------------------------------------------------
+    Close Terms Notice
+    ------------------------------------------------------ */
+
+    function closeTermsNotice() {
+
+        if (!termsNotice) return;
+
+        if (typeof gsap !== "undefined") {
+
+            gsap.to(".terms-notice-modal", {
+
+                y: 20,
+                scale: 0.97,
+                opacity: 0,
+
+                duration: 0.25,
+
+                ease: "power2.in",
+
+                onComplete: () => {
+
+                    termsNotice.classList.remove("active");
+
+                    document.body.classList.remove("modal-open");
+
+                    localStorage.setItem(
+                        "gateXchangeTermsViewed",
+                        "true"
+                    );
+
+                }
+
+            });
+
+        } else {
+
+            termsNotice.classList.remove("active");
+
+            document.body.classList.remove("modal-open");
+
+            localStorage.setItem(
+                "gateXchangeTermsViewed",
+                "true"
+            );
+
+        }
+
+    }
+
+
+    /* -----------------------------------------------------
+    Close Button
+    ------------------------------------------------------ */
+
+    termsNoticeClose?.addEventListener(
+        "click",
+        closeTermsNotice
+    );
+
+
+    /* -----------------------------------------------------
+    Continue Button
+    ------------------------------------------------------ */
+
+    continueButton?.addEventListener(
+        "click",
+        closeTermsNotice
+    );
+
+
+    /* -----------------------------------------------------
+    Read Terms
+    ------------------------------------------------------ */
+
+    readTermsButton?.addEventListener(
+        "click",
+        () => {
+
+            localStorage.setItem(
+                "gateXchangeTermsViewed",
+                "true"
+            );
+
+        }
+    );
+
 });
 
