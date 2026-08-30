@@ -1,0 +1,1541 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Terms of Service — GateXchange</title>
+
+    <meta name="description"
+        content="Read the GateXchange Terms of Service, transaction limits, fees, processing times, prohibited transactions and customer responsibilities.">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* =====================================================
+           TERMS PAGE
+        ===================================================== */
+
+        .terms-page {
+            background: #f8f9f7;
+            padding-top: 82px;
+        }
+
+        .terms-hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 100px 0 80px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(200, 155, 60, 0.10),
+                    transparent 30%
+                ),
+                #ffffff;
+
+            border-bottom: 1px solid #e3e7e3;
+        }
+
+        .terms-hero-content {
+            max-width: 820px;
+        }
+
+        .terms-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 13px;
+
+            margin-bottom: 20px;
+
+            border-radius: 50px;
+
+            color: #9f7523;
+            background: #fff8e9;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .terms-eyebrow i {
+            font-size: 11px;
+        }
+
+        .terms-hero h1 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(42px, 6vw, 72px);
+
+            line-height: 1;
+
+            letter-spacing: -4px;
+
+            color: #101512;
+        }
+
+        .terms-hero h1 span {
+            color: #9f7523;
+        }
+
+        .terms-hero p {
+            max-width: 700px;
+
+            margin-top: 22px;
+
+            color: #59615c;
+
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .terms-date {
+            margin-top: 20px;
+
+            color: #8b928d;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           TERMS LAYOUT
+        ===================================================== */
+
+        .terms-wrapper {
+            display: grid;
+
+            grid-template-columns: 240px 1fr;
+
+            gap: 60px;
+
+            padding: 80px 0 120px;
+        }
+
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .terms-sidebar {
+            position: sticky;
+
+            top: 105px;
+
+            align-self: start;
+        }
+
+        .terms-sidebar-title {
+            margin-bottom: 15px;
+
+            color: #8b928d;
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .terms-sidebar a {
+            display: block;
+
+            padding: 9px 0;
+
+            color: #59615c;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .terms-sidebar a:hover {
+            color: #9f7523;
+            transform: translateX(3px);
+        }
+
+
+        /* =====================================================
+           TERMS CONTENT
+        ===================================================== */
+
+        .terms-content {
+            max-width: 820px;
+
+            padding: 45px;
+
+            border: 1px solid #e3e7e3;
+
+            border-radius: 24px;
+
+            background: #ffffff;
+
+            box-shadow:
+                0 15px 50px rgba(12, 23, 19, 0.05);
+        }
+
+        .terms-section {
+            scroll-margin-top: 110px;
+
+            padding-bottom: 45px;
+
+            margin-bottom: 45px;
+
+            border-bottom: 1px solid #e9ece9;
+        }
+
+        .terms-section:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            border-bottom: 0;
+        }
+
+        .terms-section h2 {
+            margin-bottom: 17px;
+
+            font-family: "Manrope", sans-serif;
+
+            color: #101512;
+
+            font-size: 24px;
+
+            letter-spacing: -1px;
+        }
+
+        .terms-section h3 {
+            margin-top: 25px;
+            margin-bottom: 9px;
+
+            font-family: "Manrope", sans-serif;
+
+            color: #18251f;
+
+            font-size: 15px;
+        }
+
+        .terms-section p {
+            margin-bottom: 13px;
+
+            color: #59615c;
+
+            font-size: 13px;
+            line-height: 1.85;
+        }
+
+        .terms-section ul {
+            margin: 15px 0 18px;
+
+            padding-left: 20px;
+        }
+
+        .terms-section li {
+            margin-bottom: 10px;
+
+            color: #59615c;
+
+            font-size: 13px;
+            line-height: 1.75;
+        }
+
+        .terms-section li::marker {
+            color: #c89b3c;
+        }
+
+
+        /* =====================================================
+           IMPORTANT RULE BOX
+        ===================================================== */
+
+        .terms-rule-box {
+            margin: 25px 0;
+
+            padding: 22px;
+
+            border: 1px solid rgba(200, 155, 60, 0.25);
+
+            border-radius: 16px;
+
+            background: #fffaf0;
+        }
+
+        .terms-rule-box strong {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #9f7523;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 13px;
+        }
+
+        .terms-rule-box p {
+            margin: 0;
+
+            color: #59615c;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           RULE GRID
+        ===================================================== */
+
+        .rule-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .rule-card {
+            padding: 20px;
+
+            border: 1px solid #e3e7e3;
+
+            border-radius: 15px;
+
+            background: #f8f9f7;
+        }
+
+        .rule-card-icon {
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+            place-items: center;
+
+            margin-bottom: 13px;
+
+            border-radius: 10px;
+
+            color: #087a4a;
+            background: #e9f8f1;
+        }
+
+        .rule-card h4 {
+            margin-bottom: 5px;
+
+            color: #101512;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 13px;
+        }
+
+        .rule-card p {
+            margin: 0;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           WARNING
+        ===================================================== */
+
+        .terms-warning {
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+
+            margin-top: 20px;
+
+            padding: 17px;
+
+            border-radius: 13px;
+
+            background: #fff1f1;
+
+            border: 1px solid #f1d5d5;
+        }
+
+        .terms-warning i {
+            margin-top: 2px;
+
+            color: #c03939;
+        }
+
+        .terms-warning p {
+            margin: 0;
+
+            color: #704040;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .terms-footer {
+            padding: 35px 0;
+
+            border-top: 1px solid #e3e7e3;
+
+            background: #09100d;
+
+            color: rgba(255, 255, 255, 0.45);
+
+            font-size: 10px;
+        }
+
+        .terms-footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .terms-footer a {
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        .terms-footer a:hover {
+            color: #e5c477;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .terms-wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .terms-sidebar {
+                position: static;
+
+                display: none;
+            }
+
+            .terms-content {
+                padding: 28px 22px;
+            }
+
+            .rule-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .terms-footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .terms-page {
+                padding-top: 70px;
+            }
+
+            .terms-hero {
+                padding: 70px 0 55px;
+            }
+
+            .terms-hero h1 {
+                font-size: 45px;
+                letter-spacing: -2.5px;
+            }
+
+            .terms-hero p {
+                font-size: 13px;
+            }
+
+            .terms-wrapper {
+                padding: 45px 0 80px;
+            }
+
+            .terms-section h2 {
+                font-size: 21px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </span>
+
+                <span class="logo-text">
+                    Gate<span>Xchange</span>
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html#services">
+                    Services
+                </a>
+
+                <a href="index.html#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="index.html#reviews">
+                    Reviews
+                </a>
+
+                <a href="index.html#faq">
+                    FAQ
+                </a>
+
+            </nav>
+
+            <a
+                href="index.html#services"
+                class="nav-button">
+
+                Start Exchange
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+            <button
+                class="mobile-menu-btn"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         PAGE
+    ====================================================== -->
+
+    <main class="terms-page">
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="terms-hero">
+
+            <div class="container">
+
+                <div class="terms-hero-content">
+
+                    <div class="terms-eyebrow">
+
+                        <i class="fa-solid fa-file-contract"></i>
+
+                        Legal &amp; Policies
+
+                    </div>
+
+                    <h1>
+                        Terms of
+                        <span>Service.</span>
+                    </h1>
+
+                    <p>
+                        These Terms of Service explain the rules,
+                        requirements and conditions that apply when
+                        using GateXchange and requesting payment
+                        exchange services through our platform.
+                    </p>
+
+                    <div class="terms-date">
+                        Last updated: August 30, 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div class="container">
+
+            <div class="terms-wrapper">
+
+
+                <!-- =========================================
+                     SIDEBAR
+                ========================================== -->
+
+                <aside class="terms-sidebar">
+
+                    <div class="terms-sidebar-title">
+                        On this page
+                    </div>
+
+                    <a href="#acceptance">
+                        1. Acceptance
+                    </a>
+
+                    <a href="#service">
+                        2. Our Service
+                    </a>
+
+                    <a href="#transactions">
+                        3. Transactions
+                    </a>
+
+                    <a href="#limits">
+                        4. Transaction Limits
+                    </a>
+
+                    <a href="#fees">
+                        5. Fees
+                    </a>
+
+                    <a href="#processing">
+                        6. Processing Times
+                    </a>
+
+                    <a href="#clean-funds">
+                        7. Clean Funds
+                    </a>
+
+                    <a href="#chargebacks">
+                        8. Chargebacks
+                    </a>
+
+                    <a href="#verification">
+                        9. Verification
+                    </a>
+
+                    <a href="#crypto">
+                        10. Crypto Payouts
+                    </a>
+
+                    <a href="#refunds">
+                        11. Refunds
+                    </a>
+
+                    <a href="#prohibited">
+                        12. Prohibited Activity
+                    </a>
+
+                    <a href="#responsibility">
+                        13. Customer Responsibility
+                    </a>
+
+                    <a href="#termination">
+                        14. Suspension
+                    </a>
+
+                    <a href="#liability">
+                        15. Liability
+                    </a>
+
+                    <a href="#contact">
+                        16. Contact
+                    </a>
+
+                </aside>
+
+
+                <!-- =========================================
+                     TERMS CONTENT
+                ========================================== -->
+
+                <article class="terms-content">
+
+
+                    <!-- =====================================
+                         1
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="acceptance">
+
+                        <h2>
+                            1. Acceptance of These Terms
+                        </h2>
+
+                        <p>
+                            By using GateXchange, submitting a
+                            transaction request, or communicating with
+                            GateXchange regarding a transaction, you
+                            acknowledge that you have read, understood
+                            and agreed to these Terms of Service.
+                        </p>
+
+                        <p>
+                            If you do not agree with these terms, you
+                            should not submit a transaction request or
+                            use our services.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         2
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="service">
+
+                        <h2>
+                            2. Our Service
+                        </h2>
+
+                        <p>
+                            GateXchange provides a payment exchange and
+                            payout coordination service intended to
+                            assist eligible freelancers, contractors,
+                            remote workers, businesses and other
+                            customers with international payment
+                            transactions.
+                        </p>
+
+                        <p>
+                            Customers select an available payment
+                            service on our website, enter the amount
+                            they wish to receive and continue the
+                            transaction conversation through WhatsApp.
+                        </p>
+
+                        <p>
+                            Submitting a request does not guarantee that
+                            a transaction will be accepted or processed.
+                            Every transaction may be reviewed before
+                            confirmation.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         3
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="transactions">
+
+                        <h2>
+                            3. Transaction Process
+                        </h2>
+
+                        <p>
+                            The GateXchange website is designed to make
+                            transaction requests simple. Customers
+                            select a supported service, enter the amount
+                            they wish to receive and contact our team
+                            through WhatsApp.
+                        </p>
+
+                        <div class="rule-grid">
+
+                            <div class="rule-card">
+
+                                <div class="rule-card-icon">
+                                    <i class="fa-solid fa-1"></i>
+                                </div>
+
+                                <h4>
+                                    Select a Service
+                                </h4>
+
+                                <p>
+                                    Choose the payment service you want
+                                    to use.
+                                </p>
+
+                            </div>
+
+                            <div class="rule-card">
+
+                                <div class="rule-card-icon">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+
+                                <h4>
+                                    Enter Amount
+                                </h4>
+
+                                <p>
+                                    Enter the amount you want to receive.
+                                </p>
+
+                            </div>
+
+                            <div class="rule-card">
+
+                                <div class="rule-card-icon">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+
+                                <h4>
+                                    Contact Us
+                                </h4>
+
+                                <p>
+                                    Continue the transaction through
+                                    WhatsApp.
+                                </p>
+
+                            </div>
+
+                            <div class="rule-card">
+
+                                <div class="rule-card-icon">
+                                    <i class="fa-solid fa-4"></i>
+                                </div>
+
+                                <h4>
+                                    Confirmation
+                                </h4>
+
+                                <p>
+                                    Processing begins after the required
+                                    information and transaction are
+                                    confirmed.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         4
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="limits">
+
+                        <h2>
+                            4. Transaction Limits
+                        </h2>
+
+                        <div class="terms-rule-box">
+
+                            <strong>
+                                Maximum transaction amount: $2,000 USD
+                            </strong>
+
+                            <p>
+                                Each individual transaction submitted
+                                through GateXchange must not exceed
+                                $2,000 USD unless otherwise approved
+                                after additional review.
+                            </p>
+
+                        </div>
+
+                        <p>
+                            Customers may submit multiple transactions.
+                            However, each individual transaction must
+                            remain within the applicable $2,000 limit.
+                        </p>
+
+                        <p>
+                            If a customer wishes to process an amount
+                            greater than $2,000, the customer must
+                            clearly state the purpose of the transaction
+                            and may be required to provide additional
+                            information or documentation before
+                            GateXchange decides whether the transaction
+                            can be accepted.
+                        </p>
+
+                        <p>
+                            Splitting a transaction into multiple
+                            requests for the purpose of avoiding
+                            verification, transaction limits or other
+                            controls may result in the transaction being
+                            delayed, rejected or reviewed further.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         5
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="fees">
+
+                        <h2>
+                            5. Fees
+                        </h2>
+
+                        <p>
+                            Transactions may be subject to exchange,
+                            processing and service fees.
+                        </p>
+
+                        <div class="terms-rule-box">
+
+                            <strong>
+                                Expected total fees: approximately 5–10%
+                            </strong>
+
+                            <p>
+                                The applicable fee will be communicated
+                                and confirmed before the transaction is
+                                processed.
+                            </p>
+
+                        </div>
+
+                        <p>
+                            The final amount payable to the customer may
+                            therefore differ from the original requested
+                            amount after applicable fees, exchange rates
+                            and processing costs are taken into account.
+                        </p>
+
+                        <p>
+                            Customers should confirm the final rate and
+                            applicable charges with GateXchange before
+                            authorizing a transaction.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         6
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="processing">
+
+                        <h2>
+                            6. Processing &amp; Payout Times
+                        </h2>
+
+                        <p>
+                            Processing times depend on the payment
+                            service, transaction verification,
+                            availability of funds and other factors.
+                        </p>
+
+                        <h3>
+                            Standard Transactions
+                        </h3>
+
+                        <p>
+                            Other eligible payout transactions are
+                            generally processed within approximately
+                            <strong>6–12 hours after confirmation</strong>.
+                        </p>
+
+                        <h3>
+                            Bank &amp; Stripe-Related Transactions
+                        </h3>
+
+                        <p>
+                            Bank-transfer and Stripe-related transactions
+                            may take approximately
+                            <strong>2–3 business days</strong> after
+                            confirmation, depending on processing,
+                            verification, banking procedures and other
+                            circumstances outside GateXchange's direct
+                            control.
+                        </p>
+
+                        <div class="terms-warning">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <p>
+                                Processing times are estimates rather
+                                than guaranteed delivery times. Additional
+                                verification or delays from payment
+                                providers, banks, network congestion or
+                                compliance reviews may extend processing
+                                times.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         7
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="clean-funds">
+
+                        <h2>
+                            7. Clean &amp; Legitimate Funds Only
+                        </h2>
+
+                        <p>
+                            GateXchange only accepts legitimate funds.
+                            Customers must not use the service to process
+                            funds obtained through illegal, fraudulent or
+                            unauthorized activity.
+                        </p>
+
+                        <p>
+                            Customers represent that they have the legal
+                            right to use and transfer any funds involved
+                            in a transaction.
+                        </p>
+
+                        <h3>
+                            The following are strictly prohibited:
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Stolen or unauthorized funds.
+                            </li>
+
+                            <li>
+                                Fraud proceeds.
+                            </li>
+
+                            <li>
+                                Funds obtained through scams or deception.
+                            </li>
+
+                            <li>
+                                Unauthorized payment-account activity.
+                            </li>
+
+                            <li>
+                                Money laundering or attempts to conceal
+                                the origin of funds.
+                            </li>
+
+                            <li>
+                                Transactions connected to illegal
+                                activities.
+                            </li>
+
+                            <li>
+                                Funds subject to an existing dispute,
+                                investigation or unauthorized claim.
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         8
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="chargebacks">
+
+                        <h2>
+                            8. Chargebacks &amp; Payment Disputes
+                        </h2>
+
+                        <p>
+                            Customers must not initiate an unauthorized
+                            chargeback or payment reversal after a
+                            legitimate transaction has been confirmed and
+                            processed.
+                        </p>
+
+                        <p>
+                            If a customer believes a transaction was
+                            processed incorrectly, they should contact
+                            GateXchange immediately so that the issue can
+                            be reviewed.
+                        </p>
+
+                        <p>
+                            Nothing in these terms is intended to remove
+                            rights that cannot legally be waived under
+                            applicable consumer-protection or other laws.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         9
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="verification">
+
+                        <h2>
+                            9. Verification &amp; Additional Information
+                        </h2>
+
+                        <p>
+                            GateXchange may request additional information
+                            before or during a transaction where reasonably
+                            necessary to verify the transaction, source of
+                            funds, identity, ownership or intended purpose.
+                        </p>
+
+                        <p>
+                            A transaction may be delayed, rejected or
+                            cancelled where the requested information is
+                            not provided or where the transaction cannot
+                            reasonably be verified.
+                        </p>
+
+                        <p>
+                            GateXchange may also retain transaction records
+                            where required for operational, legal,
+                            accounting, fraud-prevention or compliance
+                            purposes.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         10
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="crypto">
+
+                        <h2>
+                            10. Cryptocurrency Payouts
+                        </h2>
+
+                        <p>
+                            Where cryptocurrency is used as the payout
+                            method, customers are responsible for providing
+                            an accurate and compatible wallet address.
+                        </p>
+
+                        <p>
+                            Cryptocurrency transfers may be irreversible.
+                            GateXchange is not responsible for losses caused
+                            by an incorrect wallet address, incompatible
+                            network or incorrect information supplied by
+                            the customer.
+                        </p>
+
+                        <div class="terms-warning">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            <p>
+                                Customers should carefully verify their
+                                wallet address and blockchain network
+                                before confirming a cryptocurrency payout.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         11
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="refunds">
+
+                        <h2>
+                            11. Refunds &amp; Reversals
+                        </h2>
+
+                        <p>
+                            Transactions that have already been processed
+                            may not be refundable or reversible where the
+                            underlying payment or payout method does not
+                            permit reversal.
+                        </p>
+
+                        <p>
+                            Any refund request will be reviewed individually
+                            based on the transaction status, payment
+                            provider rules and applicable law.
+                        </p>
+
+                        <p>
+                            Customers should confirm all transaction details,
+                            amounts, fees and payout information before
+                            authorizing a transaction.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         12
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="prohibited">
+
+                        <h2>
+                            12. Prohibited Activities
+                        </h2>
+
+                        <p>
+                            Customers may not use GateXchange for any
+                            unlawful, fraudulent or deceptive purpose.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Fraud or attempted fraud.
+                            </li>
+
+                            <li>
+                                Money laundering or concealment of funds.
+                            </li>
+
+                            <li>
+                                Unauthorized access to another person's
+                                payment account.
+                            </li>
+
+                            <li>
+                                Use of stolen financial information.
+                            </li>
+
+                            <li>
+                                Circumvention of payment-provider controls
+                                or restrictions.
+                            </li>
+
+                            <li>
+                                Transactions involving sanctioned persons
+                                or prohibited jurisdictions where applicable.
+                            </li>
+
+                            <li>
+                                Any activity that violates applicable law.
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         13
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="responsibility">
+
+                        <h2>
+                            13. Customer Responsibilities
+                        </h2>
+
+                        <p>
+                            Customers are responsible for providing accurate,
+                            complete and truthful information.
+                        </p>
+
+                        <p>
+                            Customers must ensure that any payment account,
+                            wallet or financial instrument used in connection
+                            with a transaction is legitimately controlled or
+                            authorized by them.
+                        </p>
+
+                        <p>
+                            Customers should not share passwords, security
+                            codes, authentication codes or other sensitive
+                            account credentials with GateXchange through the
+                            website or WhatsApp.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         14
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="termination">
+
+                        <h2>
+                            14. Suspension &amp; Termination
+                        </h2>
+
+                        <p>
+                            GateXchange reserves the right to refuse,
+                            suspend or terminate a transaction or customer
+                            relationship where there is a reasonable concern
+                            regarding fraud, unauthorized funds, suspicious
+                            activity, inaccurate information, violation of
+                            these terms or applicable legal requirements.
+                        </p>
+
+                        <p>
+                            Where appropriate, GateXchange may request
+                            additional information before deciding whether
+                            a transaction can proceed.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         15
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="liability">
+
+                        <h2>
+                            15. Liability &amp; Delays
+                        </h2>
+
+                        <p>
+                            GateXchange will make reasonable efforts to
+                            process eligible transactions within the
+                            estimated processing periods communicated to
+                            customers.
+                        </p>
+
+                        <p>
+                            However, delays may occur because of banks,
+                            payment providers, blockchain networks,
+                            technical problems, verification procedures,
+                            compliance reviews, holidays or circumstances
+                            outside GateXchange's reasonable control.
+                        </p>
+
+                        <p>
+                            Customers should not submit a transaction where
+                            an immediate or guaranteed payout is required.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         16
+                    ====================================== -->
+
+                    <section
+                        class="terms-section"
+                        id="contact">
+
+                        <h2>
+                            16. Contact GateXchange
+                        </h2>
+
+                        <p>
+                            For transaction questions, processing updates
+                            or support, customers may contact the GateXchange
+                            team through the official WhatsApp contact
+                            provided on our website.
+                        </p>
+
+                        <a
+                            href="https://wa.me/15485073822"
+                            target="_blank"
+                            rel="noopener"
+                            class="primary-button"
+                            style="margin-top:10px;">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Contact GateXchange
+
+                        </a>
+
+                    </section>
+
+
+                    <!-- =====================================
+                         FINAL NOTICE
+                    ====================================== -->
+
+                    <div class="terms-rule-box">
+
+                        <strong>
+                            Important
+                        </strong>
+
+                        <p>
+                            GateXchange reserves the right to update these
+                            Terms of Service when necessary. Customers are
+                            responsible for reviewing the current version
+                            before submitting a transaction.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="terms-footer">
+
+        <div class="container terms-footer-inner">
+
+            <span>
+                © 2026 GateXchange. All rights reserved.
+            </span>
+
+            <div>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                &nbsp;&nbsp;•&nbsp;&nbsp;
+
+                <a href="index.html#services">
+                    Services
+                </a>
+
+                &nbsp;&nbsp;•&nbsp;&nbsp;
+
+                <a href="tos.html">
+                    Terms of Service
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        /* Mobile menu */
+
+        const mobileBtn =
+            document.querySelector(".mobile-menu-btn");
+
+        mobileBtn?.addEventListener("click", () => {
+
+            window.location.href =
+                "index.html";
+
+        });
+
+
+        /* Smooth sidebar navigation */
+
+        document
+            .querySelectorAll(".terms-sidebar a")
+            .forEach(link => {
+
+                link.addEventListener("click", function (event) {
+
+                    const target =
+                        document.querySelector(
+                            this.getAttribute("href")
+                        );
+
+                    if (!target) return;
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                });
+
+            });
+
+    </script>
+
+</body>
+
+</html>
+
