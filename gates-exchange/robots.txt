@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gatexchange.online/sitemap.xml
