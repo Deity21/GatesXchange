@@ -3873,3 +3873,787 @@ input:focus-visible {
     }
 
 }
+/* =========================================================
+   GATEXCHANGE SERVICES — MOBILE OVERRIDE
+   IMPORTANT:
+   Put this AFTER all existing services CSS.
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* -----------------------------------------------------
+       SERVICES SECTION
+    ------------------------------------------------------ */
+
+    #services {
+        overflow: hidden;
+    }
+
+    #services .container {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+    ------------------------------------------------------ */
+
+    #services .services-header {
+        display: block;
+
+        margin-bottom: 24px;
+    }
+
+    #services .section-heading {
+        margin: 0;
+    }
+
+    #services .section-eyebrow {
+        margin-bottom: 13px;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    #services .section-heading h2 {
+        max-width: 360px;
+
+        margin: 0;
+
+        font-size: clamp(35px, 9.5vw, 46px) !important;
+
+        line-height: 0.98 !important;
+
+        letter-spacing: -2.2px !important;
+    }
+
+    #services .section-heading p {
+        max-width: 360px;
+
+        margin-top: 17px;
+
+        font-size: 12px !important;
+
+        line-height: 1.7 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SERVICE COUNT
+    ------------------------------------------------------ */
+
+    #services .services-count {
+        display: inline-flex;
+
+        margin-top: 18px;
+        margin-bottom: 0;
+
+        padding: 9px 12px;
+
+        border-radius: 10px;
+    }
+
+    #services .services-count strong {
+        font-size: 16px;
+    }
+
+    #services .services-count span {
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       TOOLBAR
+    ===================================================== */
+
+    #services .services-toolbar {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 11px;
+
+        width: 100%;
+
+        margin-bottom: 18px;
+
+        padding: 0;
+
+        border: 0;
+
+        background: transparent;
+
+        box-shadow: none;
+
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+
+    /* -----------------------------------------------------
+       FILTER CONTAINER
+    ------------------------------------------------------ */
+
+    #services .service-filters {
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        align-items: center;
+
+        gap: 7px;
+
+        width: calc(100vw - 40px);
+
+        max-width: none;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        padding: 3px 1px 8px;
+
+        margin: 0;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #services .service-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       FILTER BUTTONS
+    ------------------------------------------------------ */
+
+    #services .service-filter {
+
+        flex: 0 0 auto;
+
+        width: auto !important;
+
+        min-width: max-content;
+
+        min-height: 37px;
+
+        display: inline-flex !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 7px;
+
+        padding: 0 13px !important;
+
+        margin: 0 !important;
+
+        border: 1px solid #e4e8e5 !important;
+
+        border-radius: 50px !important;
+
+        outline: none;
+
+        color: #5e6761 !important;
+
+        background: #ffffff !important;
+
+        box-shadow: 0 3px 12px rgba(10, 20, 15, 0.035);
+
+        font-family: var(--font-main, "Manrope", sans-serif) !important;
+
+        font-size: 9px !important;
+
+        font-weight: 700 !important;
+
+        line-height: 1 !important;
+
+        white-space: nowrap;
+
+        appearance: none;
+
+        -webkit-appearance: none;
+
+        cursor: pointer;
+    }
+
+    #services .service-filter i {
+        display: inline-block !important;
+
+        flex-shrink: 0;
+
+        font-size: 9px !important;
+    }
+
+
+    /* Active */
+
+    #services .service-filter.active {
+
+        color: #ffffff !important;
+
+        background: #101b16 !important;
+
+        border-color: #101b16 !important;
+
+        box-shadow:
+            0 6px 15px rgba(10, 20, 15, 0.14);
+    }
+
+
+    /* -----------------------------------------------------
+       SEARCH
+    ------------------------------------------------------ */
+
+    #services .service-search {
+
+        position: relative;
+
+        display: block;
+
+        width: 100% !important;
+
+        flex: none !important;
+    }
+
+    #services .service-search i {
+
+        left: 14px;
+
+        font-size: 11px;
+    }
+
+    #services .service-search input {
+
+        width: 100% !important;
+
+        height: 45px !important;
+
+        padding:
+            0 14px 0 39px !important;
+
+        border: 1px solid #e1e6e2 !important;
+
+        border-radius: 12px !important;
+
+        color: #18201c !important;
+
+        background: #ffffff !important;
+
+        font-family: var(--font-main, "Manrope", sans-serif) !important;
+
+        font-size: 11px !important;
+
+        outline: none;
+    }
+
+
+    /* =====================================================
+       SERVICE GRID
+    ====================================================== */
+
+    #services .upgraded-services-grid {
+
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        width: 100%;
+
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       SERVICE CARD
+    ====================================================== */
+
+    #services .upgraded-service-card {
+
+        position: relative;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        min-height: 0 !important;
+
+        height: auto !important;
+
+        display: grid !important;
+
+        grid-template-columns: 48px minmax(0, 1fr) !important;
+
+        grid-template-rows: auto auto !important;
+
+        column-gap: 13px;
+
+        row-gap: 10px;
+
+        align-items: center;
+
+        padding: 15px !important;
+
+        margin: 0 !important;
+
+        border: 1px solid #e2e7e3 !important;
+
+        border-radius: 17px !important;
+
+        background: #ffffff !important;
+
+        text-align: left !important;
+
+        box-shadow:
+            0 4px 16px rgba(10, 20, 15, 0.025) !important;
+
+        transform: none !important;
+
+        overflow: hidden;
+    }
+
+
+    /* -----------------------------------------------------
+       CARD TOP
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card .service-card-top {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        display: block;
+
+        width: 48px;
+        height: 48px;
+
+        margin: 0;
+
+    }
+
+
+    /* -----------------------------------------------------
+       ICON
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card .service-icon {
+
+        width: 48px !important;
+        height: 48px !important;
+
+        display: grid !important;
+
+        place-items: center !important;
+
+        margin: 0 !important;
+
+        border-radius: 13px !important;
+
+        font-size: 18px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       HIDE BADGE ON MOBILE
+       This prevents the "Popular / US / Global" text
+       from appearing underneath the icon.
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card .service-badge {
+
+        display: none !important;
+    }
+
+
+    /* -----------------------------------------------------
+       SERVICE INFO
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card .service-info {
+
+        grid-column: 2;
+
+        grid-row: 1;
+
+        min-width: 0;
+
+        padding: 0 !important;
+
+        margin: 0 !important;
+    }
+
+    #services .upgraded-service-card .service-info h3 {
+
+        margin: 0 0 5px !important;
+
+        overflow: hidden;
+
+        color: #101512 !important;
+
+        font-family:
+            var(--font-main, "Manrope", sans-serif) !important;
+
+        font-size: 14px !important;
+
+        font-weight: 800 !important;
+
+        line-height: 1.2 !important;
+
+        letter-spacing: -0.35px;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+    }
+
+    #services .upgraded-service-card .service-info p {
+
+        width: 100%;
+
+        max-width: none !important;
+
+        margin: 0 !important;
+
+        color: #7a837d !important;
+
+        font-family:
+            var(--font-body, "DM Sans", sans-serif) !important;
+
+        font-size: 9.5px !important;
+
+        font-weight: 500;
+
+        line-height: 1.55 !important;
+    }
+
+
+    /* =====================================================
+       CARD BOTTOM
+    ====================================================== */
+
+    #services .upgraded-service-card .service-card-bottom {
+
+        grid-column: 1 / -1;
+
+        grid-row: 2;
+
+        width: 100%;
+
+        display: flex !important;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+        margin: 2px 0 0 !important;
+
+        padding: 10px 0 0 !important;
+
+        border-top: 1px solid #edf0ed !important;
+
+        color: #9a752d !important;
+
+        font-size: 9px !important;
+
+        font-weight: 800 !important;
+
+        line-height: 1 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       CARD ARROW
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card .service-arrow {
+
+        width: 27px !important;
+        height: 27px !important;
+
+        display: grid !important;
+
+        place-items: center !important;
+
+        flex-shrink: 0;
+
+        border-radius: 50% !important;
+
+        color: #ffffff !important;
+
+        background: #101b16 !important;
+
+        transform: none !important;
+    }
+
+    #services .upgraded-service-card .service-arrow i {
+
+        font-size: 8px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       CARD HOVER / ACTIVE
+    ------------------------------------------------------ */
+
+    #services .upgraded-service-card:hover {
+
+        transform: none !important;
+
+        border-color: #dfe4e0 !important;
+
+        box-shadow:
+            0 7px 22px rgba(10, 20, 15, 0.06) !important;
+    }
+
+    #services .upgraded-service-card:active {
+
+        transform: scale(0.985) !important;
+
+        background: #fbfcfb !important;
+    }
+
+
+    /* =====================================================
+       NOTICE
+    ====================================================== */
+
+    #services .services-notice {
+
+        display: grid;
+
+        grid-template-columns: 40px minmax(0, 1fr);
+
+        gap: 12px;
+
+        align-items: start;
+
+        width: 100%;
+
+        margin-top: 18px;
+
+        padding: 15px;
+
+        border-radius: 15px;
+    }
+
+    #services .services-notice-icon {
+
+        width: 40px;
+        height: 40px;
+
+        border-radius: 11px;
+
+        font-size: 13px;
+    }
+
+    #services .services-notice > div:nth-child(2) {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    #services .services-notice strong {
+
+        margin-bottom: 4px;
+
+        font-size: 10px;
+    }
+
+    #services .services-notice p {
+
+        font-size: 8.5px;
+
+        line-height: 1.6;
+    }
+
+    #services .services-notice-limit {
+
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 12px 0 0;
+
+        margin-top: 2px;
+
+        border-top: 1px solid #eadfca;
+
+        border-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL — iPHONE / 390px
+========================================================= */
+
+@media (max-width: 430px) {
+
+    #services .container {
+
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    #services .section-heading h2 {
+
+        max-width: 350px;
+
+        font-size: 38px !important;
+
+        line-height: 0.96 !important;
+
+        letter-spacing: -2px !important;
+    }
+
+
+    #services .section-heading p {
+
+        max-width: 350px;
+
+        font-size: 11px !important;
+
+        line-height: 1.7 !important;
+    }
+
+
+    #services .service-filters {
+
+        width: calc(100vw - 32px);
+    }
+
+
+    #services .service-filter {
+
+        min-height: 35px;
+
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+
+        font-size: 8.5px !important;
+    }
+
+
+    #services .service-search input {
+
+        height: 43px !important;
+
+        font-size: 10px !important;
+    }
+
+
+    #services .upgraded-service-card {
+
+        grid-template-columns: 45px minmax(0, 1fr) !important;
+
+        column-gap: 12px;
+
+        padding: 14px !important;
+
+        border-radius: 16px !important;
+    }
+
+
+    #services .upgraded-service-card .service-card-top {
+
+        width: 45px;
+        height: 45px;
+    }
+
+
+    #services .upgraded-service-card .service-icon {
+
+        width: 45px !important;
+        height: 45px !important;
+
+        border-radius: 12px !important;
+
+        font-size: 17px !important;
+    }
+
+
+    #services .upgraded-service-card .service-info h3 {
+
+        font-size: 13px !important;
+    }
+
+
+    #services .upgraded-service-card .service-info p {
+
+        font-size: 9px !important;
+
+        line-height: 1.5 !important;
+    }
+
+
+    #services .upgraded-service-card .service-card-bottom {
+
+        padding-top: 9px !important;
+
+        font-size: 8px !important;
+    }
+
+
+    #services .upgraded-service-card .service-arrow {
+
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 360px
+========================================================= */
+
+@media (max-width: 370px) {
+
+    #services .section-heading h2 {
+
+        font-size: 34px !important;
+    }
+
+    #services .upgraded-service-card {
+
+        grid-template-columns: 42px minmax(0, 1fr) !important;
+
+        padding: 12px !important;
+    }
+
+    #services .upgraded-service-card .service-card-top {
+
+        width: 42px;
+        height: 42px;
+    }
+
+    #services .upgraded-service-card .service-icon {
+
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+}
