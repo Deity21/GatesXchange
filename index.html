@@ -415,151 +415,973 @@
 
 
         <!-- =========================
-             SERVICES
+            SERVICES
         ========================== -->
         <section class="services-section section-padding" id="services">
 
             <div class="container">
 
-                <div class="section-heading">
+                <!-- =========================
+                    SECTION HEADER
+                ========================== -->
 
-                    <div class="section-eyebrow">
-                        OUR SERVICES
+                <div class="services-header">
+
+                    <div class="section-heading">
+
+                        <div class="section-eyebrow">
+                            <span class="eyebrow-dot"></span>
+                            OUR SERVICES
+                        </div>
+
+                        <h2>
+                            Choose how you
+                            <span>want to receive.</span>
+                        </h2>
+
+                        <p>
+                            Select a supported service, enter the amount you
+                            want to receive, and continue your request with
+                            our team through WhatsApp.
+                        </p>
+
                     </div>
 
-                    <h2>
-                        Choose how you
-                        <span>want to receive.</span>
-                    </h2>
 
-                    <p>
-                        Select your preferred payment service and tell us
-                        how much you want to receive. We'll take it from there.
-                    </p>
+                    <!-- Service count -->
+
+                    <div class="services-count">
+
+                        <strong>15+</strong>
+
+                        <span>
+                            payment options
+                        </span>
+
+                    </div>
 
                 </div>
 
 
-                <div class="services-grid">
+                <!-- =========================
+                    SERVICE TOOLBAR
+                ========================== -->
 
-                    <button class="service-card" onclick="openTransaction('PayPal')">
-                        <div class="service-icon paypal">
-                            <i class="fa-brands fa-paypal"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>PayPal</h3>
-                            <p>Receive through PayPal</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
+                <div class="services-toolbar">
 
+                    <!-- Categories -->
 
-                    <button class="service-card" onclick="openTransaction('Stripe')">
-                        <div class="service-icon stripe">
-                            <i class="fa-brands fa-stripe"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Stripe</h3>
-                            <p>Receive through Stripe</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
+                    <div class="service-filters">
+
+                        <button
+                            class="service-filter active"
+                            data-filter="all">
+
+                            <i class="fa-solid fa-grid-2"></i>
+
+                            All Services
+
+                        </button>
 
 
-                    <button class="service-card" onclick="openTransaction('Wise')">
-                        <div class="service-icon wise">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Wise</h3>
-                            <p>International payments</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
+                        <button
+                            class="service-filter"
+                            data-filter="payment">
 
-
-                    <button class="service-card" onclick="openTransaction('US Bank')">
-                        <div class="service-icon bank">
-                            <i class="fa-solid fa-building-columns"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>US Bank</h3>
-                            <p>US bank payments</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
-
-
-                    <button class="service-card" onclick="openTransaction('Euro Bank')">
-                        <div class="service-icon euro">
-                            <i class="fa-solid fa-euro-sign"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Euro Bank</h3>
-                            <p>EUR payments</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
-
-
-                    <button class="service-card" onclick="openTransaction('Payoneer')">
-                        <div class="service-icon payoneer">
-                            <i class="fa-solid fa-credit-card"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Payoneer</h3>
-                            <p>Freelancer payments</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
-                    </button>
-
-
-                    <button class="service-card" onclick="openTransaction('Skrill')">
-                        <div class="service-icon skrill">
                             <i class="fa-solid fa-wallet"></i>
+
+                            Payment Platforms
+
+                        </button>
+
+
+                        <button
+                            class="service-filter"
+                            data-filter="banking">
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                            Banking
+
+                        </button>
+
+
+                        <button
+                            class="service-filter"
+                            data-filter="freelance">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            Freelance & Creator
+
+                        </button>
+
+
+                        <button
+                            class="service-filter"
+                            data-filter="digital">
+
+                            <i class="fa-brands fa-bitcoin"></i>
+
+                            Digital Assets
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Search -->
+
+                    <div class="service-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="serviceSearch"
+                            placeholder="Search services..."
+                            autocomplete="off">
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                    SERVICES GRID
+                ========================== -->
+
+                <div class="services-grid upgraded-services-grid"
+                    id="servicesGrid">
+
+
+                    <!-- =========================================
+                        PAYPAL
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="PayPal"
+                        onclick="openTransaction('PayPal')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon paypal">
+                                <i class="fa-brands fa-paypal"></i>
+                            </div>
+
+                            <span class="service-badge popular">
+                                Popular
+                            </span>
+
                         </div>
+
                         <div class="service-info">
+
+                            <h3>PayPal</h3>
+
+                            <p>
+                                Receive eligible payments through PayPal.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        STRIPE
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Stripe"
+                        onclick="openTransaction('Stripe')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon stripe">
+                                <i class="fa-brands fa-stripe"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Stripe</h3>
+
+                            <p>
+                                Request eligible Stripe-related payouts.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        WISE
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Wise"
+                        onclick="openTransaction('Wise')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon wise">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Global
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Wise</h3>
+
+                            <p>
+                                International payment and transfer requests.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        PAYONEER
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Payoneer"
+                        onclick="openTransaction('Payoneer')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon payoneer">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+
+                            <span class="service-badge popular">
+                                Freelancers
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Payoneer</h3>
+
+                            <p>
+                                Receive eligible freelancer payments.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        SKRILL
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Skrill"
+                        onclick="openTransaction('Skrill')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon skrill">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
                             <h3>Skrill</h3>
-                            <p>Digital payments</p>
+
+                            <p>
+                                Digital payment and withdrawal requests.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
                     </button>
 
 
-                    <button class="service-card" onclick="openTransaction('Revolut')">
-                        <div class="service-icon revolut">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
+                    <!-- =========================================
+                        REVOLUT
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Revolut"
+                        onclick="openTransaction('Revolut')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon revolut">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Global
+                            </span>
+
                         </div>
+
                         <div class="service-info">
+
                             <h3>Revolut</h3>
-                            <p>Global payments</p>
+
+                            <p>
+                                Request eligible Revolut transactions.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
                     </button>
 
 
-                    <button class="service-card" onclick="openTransaction('Venmo')">
-                        <div class="service-icon venmo">
-                            <i class="fa-solid fa-v"></i>
+                    <!-- =========================================
+                        VENMO
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Venmo"
+                        onclick="openTransaction('Venmo')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon venmo">
+                                <i class="fa-solid fa-v"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                US
+                            </span>
+
                         </div>
+
                         <div class="service-info">
+
                             <h3>Venmo</h3>
-                            <p>US payments</p>
+
+                            <p>
+                                Eligible US payment requests.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
                     </button>
 
 
-                    <button class="service-card" onclick="openTransaction('Zelle')">
-                        <div class="service-icon zelle">
-                            <i class="fa-solid fa-z"></i>
+                    <!-- =========================================
+                        ZELLE
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="payment"
+                        data-service="Zelle"
+                        onclick="openTransaction('Zelle')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon zelle">
+                                <i class="fa-solid fa-z"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                US
+                            </span>
+
                         </div>
+
                         <div class="service-info">
+
                             <h3>Zelle</h3>
-                            <p>US transfers</p>
+
+                            <p>
+                                Eligible US transfer requests.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square service-arrow"></i>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
                     </button>
+
+
+                    <!-- =========================================
+                        US BANK
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="banking"
+                        data-service="US Bank"
+                        onclick="openTransaction('US Bank')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon bank">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                USD
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>US Bank</h3>
+
+                            <p>
+                                US banking and transfer requests.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        EURO BANK
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="banking"
+                        data-service="Euro Bank"
+                        onclick="openTransaction('Euro Bank')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon euro">
+                                <i class="fa-solid fa-euro-sign"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                EUR
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Euro Bank</h3>
+
+                            <p>
+                                Eligible EUR banking transactions.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        ATM ACCOUNT
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="banking"
+                        data-service="AirTm Account"
+                        onclick="openTransaction('AirTm Account')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon atm">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Transfers
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>AirTm Account</h3>
+
+                            <p>
+                                Eligible AirTm and account transfer requests.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start transaction
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        FIVERR
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card featured-service"
+                        data-category="freelance"
+                        data-service="Fiverr Withdrawal"
+                        onclick="openTransaction('Fiverr Withdrawal')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon fiverr">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                            <span class="service-badge popular">
+                                Freelancers
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Fiverr Withdrawal</h3>
+
+                            <p>
+                                Request eligible Fiverr earnings withdrawals.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start withdrawal
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        UPWORK
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card featured-service"
+                        data-category="freelance"
+                        data-service="Upwork Withdrawal"
+                        onclick="openTransaction('Upwork Withdrawal')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon upwork">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+
+                            <span class="service-badge popular">
+                                Freelancers
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Upwork Withdrawal</h3>
+
+                            <p>
+                                Request eligible Upwork earnings withdrawals.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start withdrawal
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        TIKTOK
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="freelance"
+                        data-service="TikTok Withdrawal"
+                        onclick="openTransaction('TikTok Withdrawal')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Creator
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>TikTok Withdrawal</h3>
+
+                            <p>
+                                Request eligible creator withdrawal assistance.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start withdrawal
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        CRYPTO
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="digital"
+                        data-service="Crypto Exchange"
+                        onclick="openTransaction('Crypto Exchange')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon crypto">
+                                <i class="fa-brands fa-bitcoin"></i>
+                            </div>
+
+                            <span class="service-badge crypto-badge">
+                                Digital
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Crypto Exchange</h3>
+
+                            <p>
+                                Exchange supported digital assets.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start exchange
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- =========================================
+                        GIFT CARDS
+                    ========================================== -->
+
+                    <button
+                        class="service-card upgraded-service-card"
+                        data-category="digital"
+                        data-service="Gift Cards"
+                        onclick="openTransaction('Gift Cards')">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon gift">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+
+                            <span class="service-badge">
+                                Digital
+                            </span>
+
+                        </div>
+
+                        <div class="service-info">
+
+                            <h3>Gift Cards</h3>
+
+                            <p>
+                                Exchange eligible gift cards for available
+                                payout options.
+                            </p>
+
+                        </div>
+
+                        <div class="service-card-bottom">
+
+                            <span>
+                                Start exchange
+                            </span>
+
+                            <span class="service-arrow">
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+
+                <!-- =========================
+                    NO RESULTS
+                ========================== -->
+
+                <div
+                    class="services-no-results"
+                    id="servicesNoResults">
+
+                    <div class="no-results-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <h3>
+                        No services found
+                    </h3>
+
+                    <p>
+                        Try another service or category.
+                    </p>
+
+                    <button
+                        type="button"
+                        onclick="resetServiceFilters()">
+
+                        View all services
+
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                    SERVICE NOTICE
+                ========================== -->
+
+                <div class="services-notice">
+
+                    <div class="services-notice-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Simple &amp; secure process
+                        </strong>
+
+                        <p>
+                            Select a service, enter your desired amount,
+                            and continue with our team through WhatsApp.
+                            Transaction limits, fees and processing times
+                            apply.
+                        </p>
+
+                    </div>
+
+                    <div class="services-notice-limit">
+
+                        <span>Transaction limit</span>
+
+                        <strong>
+                            $2,000
+                        </strong>
+
+                        <small>
+                            per transaction
+                        </small>
+
+                    </div>
 
                 </div>
 

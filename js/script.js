@@ -1039,5 +1039,171 @@ Please provide me with the next steps.`;
         }
     );
 
+    /* =====================================================
+    SERVICE FILTERS & SEARCH
+    ===================================================== */
+
+    const serviceFilters =
+        document.querySelectorAll(".service-filter");
+
+    const serviceCards =
+        document.querySelectorAll(".upgraded-service-card");
+
+    const serviceSearch =
+        document.getElementById("serviceSearch");
+
+    const servicesNoResults =
+        document.getElementById("servicesNoResults");
+
+
+    let activeServiceCategory = "all";
+
+
+    /* -----------------------------------------------------
+    Filter Services
+    ------------------------------------------------------ */
+
+    function filterServices() {
+
+        const searchTerm =
+            serviceSearch
+                ? serviceSearch.value
+                    .toLowerCase()
+                    .trim()
+                : "";
+
+        let visibleCount = 0;
+
+
+        serviceCards.forEach(card => {
+
+            const category =
+                card.dataset.category || "";
+
+            const service =
+                card.dataset.service
+                    ?.toLowerCase() || "";
+
+
+            const categoryMatch =
+                activeServiceCategory === "all" ||
+                category === activeServiceCategory;
+
+
+            const searchMatch =
+                !searchTerm ||
+                service.includes(searchTerm);
+
+
+            if (categoryMatch && searchMatch) {
+
+                card.classList.remove(
+                    "service-hidden"
+                );
+
+                visibleCount++;
+
+            } else {
+
+                card.classList.add(
+                    "service-hidden"
+                );
+
+            }
+
+        });
+
+
+        /* No results */
+
+        if (servicesNoResults) {
+
+            servicesNoResults.classList.toggle(
+                "active",
+                visibleCount === 0
+            );
+
+        }
+
+    }
+
+
+    /* -----------------------------------------------------
+    Category Buttons
+    ------------------------------------------------------ */
+
+    serviceFilters.forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                serviceFilters.forEach(
+                    filter => {
+                        filter.classList.remove("active");
+                    }
+                );
+
+
+                button.classList.add("active");
+
+
+                activeServiceCategory =
+                    button.dataset.filter;
+
+
+                filterServices();
+
+            }
+        );
+
+    });
+
+
+    /* -----------------------------------------------------
+    Search
+    ------------------------------------------------------ */
+
+    serviceSearch?.addEventListener(
+        "input",
+        filterServices
+    );
+
+
+    /* -----------------------------------------------------
+    Reset
+    ------------------------------------------------------ */
+
+    window.resetServiceFilters = function () {
+
+        activeServiceCategory = "all";
+
+
+        serviceFilters.forEach(
+            filter => {
+
+                filter.classList.toggle(
+                    "active",
+                    filter.dataset.filter === "all"
+                );
+
+            }
+        );
+
+
+        if (serviceSearch) {
+            serviceSearch.value = "";
+        }
+
+
+        filterServices();
+
+    };
+
+
+    /* Initial state */
+
+    filterServices();
+
 });
 
